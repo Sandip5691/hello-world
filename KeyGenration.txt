@@ -1,0 +1,126 @@
+$ pwd
+/
+
+Administrator@sandip-PC MINGW32 /
+$ ls
+bin/  dev/  git-bash.exe*  LICENSE.txt  proc/              tmp/          unins000.exe*  usr/
+cmd/  etc/  git-cmd.exe*   mingw32/     ReleaseNotes.html  unins000.dat  unins000.msg
+
+Administrator@sandip-PC MINGW32 /
+$ cd c:
+
+Administrator@sandip-PC MINGW32 /c
+$ pwd
+/c
+
+Administrator@sandip-PC MINGW32 /c
+$ cd D:
+
+Administrator@sandip-PC MINGW32 /d
+$ pwd
+/d
+
+Administrator@sandip-PC MINGW32 /d
+$ ls
+'$RECYCLE.BIN'/  impDo/           NP/      pmrda_attachements/           Technical/
+Audio/           Indiaantivirus/  Photos/  Songs/
+Hobbies/         'New folder'/    PMRDA/   'System Volume Information'/
+
+Administrator@sandip-PC MINGW32 /d
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+Administrator@sandip-PC MINGW32 /d
+$ mkdir test
+
+Administrator@sandip-PC MINGW32 /d
+$ ls
+'$RECYCLE.BIN'/  impDo/           NP/      pmrda_attachements/           Technical/
+Audio/           Indiaantivirus/  Photos/  Songs/                        test/
+Hobbies/         'New folder'/    PMRDA/   'System Volume Information'/
+
+Administrator@sandip-PC MINGW32 /d
+$ cd test
+
+Administrator@sandip-PC MINGW32 /d/test
+$ pwd
+/d/test
+
+Administrator@sandip-PC MINGW32 /d/test
+$ git clone https://github.com/Sandip5691/readme-edit
+Cloning into 'readme-edit'...
+Username for 'https://github.com': Sandip5691
+remote: Repository not found.
+fatal: repository 'https://github.com/Sandip5691/readme-edit/' not found
+
+Administrator@sandip-PC MINGW32 /d/test
+$ ls -al ~/.ssh
+total 9
+drwxr-xr-x 1 Administrator 197121   0 Jul 23 11:37 ./
+drwxr-xr-x 1 Administrator 197121   0 Jul 23 09:49 ../
+-rw-r--r-- 1 Administrator 197121 407 Jul 23 11:37 known_hosts
+
+Administrator@sandip-PC MINGW32 /d/test
+$ ssh-keygen -t rsa -b 4096 -C "sandipdevarkar123@yahoo.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Saving key "/c/Users/Administrator/.ssh/id_rsa" failed: passphrase is too short (minimum four characters)
+
+Administrator@sandip-PC MINGW32 /d/test
+$ ssh-keygen -t rsa -b 4096 -C "sandipdevarkar123@yahoo.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):[PRESS ENTER]
+Enter passphrase (empty for no passphrase):[12345]
+Enter same passphrase again:[12345]
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:KuAupvkEPNNtNmLJaf3g2Zi+Jeo9y/TPs27oLd0g7xE sandipdevarkar123@yahoo.com
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|                 |
+|                 |
+|. o =            |
+|.+.O B  SE       |
+| o=.= Oo ..      |
+|  o .B.+=.o      |
+|.=  *o+oo=..     |
+|=o+o *=o*Bo      |
++----[SHA256]-----+
+
+Administrator@sandip-PC MINGW32 /d/test
+$ eval $(ssh-agent -s)
+Agent pid 5480
+
+Administrator@sandip-PC MINGW32 /d/test
+$ ssh-add ~/.ssh/id_rsa
+Enter passphrase for /c/Users/Administrator/.ssh/id_rsa:
+Identity added: /c/Users/Administrator/.ssh/id_rsa (/c/Users/Administrator/.ssh/id_rsa)
+
+Administrator@sandip-PC MINGW32 /d/test
+$ clip < ~/.ssh/id_rsa.pub
+
+Administrator@sandip-PC MINGW32 /d/test
+$ cd ~/.ssh
+
+Administrator@sandip-PC MINGW32 ~/.ssh
+$ pwd
+/c/Users/Administrator/.ssh
+
+Administrator@sandip-PC MINGW32 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub  known_hosts
+
+Administrator@sandip-PC MINGW32 ~/.ssh
+$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDI8WXK9AYbYHNDZ5WZo702Z8p6dkBCDQYNvFD8Ye0TVhQs9JmZl9MxNcbmRvayJZLbDnqGA4rKljg6kQoi/NTXkUJiTDW9tW25FgsIguyasfv4V2zvnoTXx7Zzv6oBRIMgFffz7MXF3ghe724kG89zt2oFLV9iu4dUKnkRD3kwXZ4fA3YdT6hxskBrSkDF8iNDOWKiTFRWBhpA5k2ZmpvXy4QOFKr0pCDcswqyasCI7o+G2h1dtnp5xT36qB/0dpcViLwcRPs4lsqIYAfklfSWyF9NgTwUKYdPppm7VnlEWY0Bx4qojwfg8kYmMMqWSgKjWMP0CfqT3Dk3/MGrlNg3lBHuoV21gT50OA5g4KIh6LKtwwzx9JjYvDr9kZ5cw0IMs/cvT3WaXq2M4oHL0qXZ6riaAKTOw9irgUJiEbYroRenyU2JAcB7ArJB5DRx4+jRVvRCo8wm2sSrRzrCpyhbugaLmx7Fwx4b397Vyal6Qjc8WuiHSuBA2HjX6n1JpbjC8HnT6Jt+1OmiBn4gwhNhfCbOGdFCNssz20ouFiOFhw5Pejlv+dtAwQdDj2+kGQOFHbfJpRcxNzCUWBJBXjrWI+N69aFxrC8aJC3T1xJryy1nEH25daP5fT7328JN+0WqGZ1NZVFZGtuxr3M0S5z8x2zoYXy/nLvQ2XRfMihDvQ== sandipdevarkar123@yahoo.com
+
+Administrator@sandip-PC MINGW32 ~/.ssh
+$
+
+
+https://github.com/Sandip5691/GitProject
