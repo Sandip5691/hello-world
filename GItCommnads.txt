@@ -1,0 +1,47 @@
+##############################################################################################
+
+
+Administrator@sandip-PC MINGW32 /d/test/hello-world (master)
+$ git push origin readme-edit_master_Second
+Username for 'https://github.com': Sandip5691
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Sandip5691/hello-world/'
+
+Administrator@sandip-PC MINGW32 /d/test/hello-world (master)                        NOT CHECKED Only Set
+$ git config --global credential.helper wincred
+
+Administrator@sandip-PC MINGW32 /d/test/hello-world (master)
+$ git push origin readme-edit_master_Second
+Username for 'https://github.com': sandipdevarkar123@yahoo.com
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/Sandip5691/hello-world
+ * [new branch]      readme-edit_master_Second -> readme-edit_master_Second
+
+#####################################################################################################
+
+ALL BRANCHES 
+Administrator@sandip-PC MINGW32 /d/test/hello-world (master)
+$ git branch --all
+* master
+  readme-edit
+  readme-edit_Second
+  readme-edit_master_Second
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/readme-edit
+
+Local BRANCHES
+Administrator@sandip-PC MINGW32 /d/test/hello-world (master)
+$ git branch
+* master
+  readme-edit
+  readme-edit_Second
+  readme-edit_master_Second
+
+
+ALL BRANCHES
+Administrator@sandip-PC MINGW32 /d/test/hello-world (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+  origin/readme-edit
